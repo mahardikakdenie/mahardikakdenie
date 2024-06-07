@@ -9,7 +9,7 @@
 
 - 🔭 I’m currently working on [ensiklotari.id](ensiklotari.id)
 
-- 🌱 I’m currently learning **Vuejs,Nest,Docker,Laravel**
+- 🌱 I’m currently learning **Vuejs,Nest,Node, Express,Docker,Laravel**
 
 - 💬 Ask me about **Vuejs, etc**
 
