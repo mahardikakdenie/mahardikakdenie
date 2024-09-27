@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Mahardika Kessuma denie</h1>
-<h3 align="center">A Frontend Developer from Bandung, Indonesia</h3>
+<h3 align="center">A Fullstack Developer from Bandung, Indonesia</h3>
 
 - 🔭 I’m currently working on [ensiklotari.id](ensiklotari.id)
 
