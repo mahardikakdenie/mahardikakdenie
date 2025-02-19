@@ -7,7 +7,6 @@
 
 - 💬 Ask me about **Vuejs, etc**
 
-- 📫 How to reach me **dikamahar884@gmail.com**
 
 - 
 
