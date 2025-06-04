@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on [ensiklotari.id](ensiklotari.id)
 
-- 🌱 I’m currently learning **Vuejs,Reactjs,Nest,Node, Express,Docker,Laravel**
+- 🌱 I’m currently working with techstach **Vuejs,Reactjs,Flutter,Nest,Node, Express,Docker,Laravel**
 
 - 💬 Ask me about **Vuejs, etc**
 
