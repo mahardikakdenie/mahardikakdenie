@@ -6,6 +6,13 @@
 - 💼 Specialized in **React, Vue/Nuxt, Flutter**, and **Node.js ecosystem**
 - 🛠️ Building scalable apps with **NestJS, Express, Tailwind CSS, and Bootstrap**
 - 💾 Proficient with **MongoDB, MySQL, and PostgreSQL**
+
+<p align="left">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=mahardikakdenie" alt="mahardikakdenie" />
+  </a>
+</p>
+  
 <!-- START: Stats -->
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=mahardikakdenie&show_icons=true&theme=github_dark&locale=en" alt="mahardikakdenie" width="48%" />
