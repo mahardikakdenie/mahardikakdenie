@@ -24,7 +24,7 @@
 <!-- END: Stats -->
 
 <!-- Most Used Languages -->
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MahardikaDKessuma&layout=compact&theme=react-dark)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mahardikakdenie&layout=compact&theme=react-dark)
 
 <!-- END: Tech Stack -->
 
