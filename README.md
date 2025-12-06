@@ -3,7 +3,7 @@
 
 - 🔭 Currently building **[ensiklotari.id](https://ensiklotari.id)**
 - 🌐 Portfolio: <a href="https://mahardikakdenie.my.id" target="_blank">mahardikakdenie.my.id</a>
-- 💼 Specialized in **React, Vue/Nuxt, Flutter, React, React Native, Nextjs, Typescript **, and **Node.js ecosystem**
+- 💼 Specialized in **React, Vue/Nuxt, Flutter, React, React Native, Nextjs, Typescript**, and **Node.js ecosystem**
 - 🛠️ Building scalable apps with **PHP Laravel, Vuejs, Reactjs, Nextjs, Nuxtjs, NestJS, Express, Tailwind CSS, and Bootstrap**
 - 💾 Proficient with **MongoDB, MySQL, and PostgreSQL**
 
