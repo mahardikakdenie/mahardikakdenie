@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/mahardikakdenie/mahardikakdenie/2f7ed220e056ef23fae1e0601d85d2fca8fec9e1/.github/ISSUE_TEMPLATE/hero-banner.svg" alt="Banner" width="100%" />
+  <img src="https://raw.githubusercontent.com/mahardikakdenie/mahardikakdenie/4f2651ab798a022924a694c4d9e135b1278470f8/.github/ISSUE_TEMPLATE/hero-banner.svg" alt="Banner" width="100%" />
 </div>
 
 <br/>
