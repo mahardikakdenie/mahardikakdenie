@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://i.ibb.co.com/TDC6b4HV/gemini-svg-1.jpg" alt="Banner" width="100%" />
+  <img src="https://raw.githubusercontent.com/mahardikakdenie/mahardikakdenie/2f7ed220e056ef23fae1e0601d85d2fca8fec9e1/.github/ISSUE_TEMPLATE/hero-banner.svg" alt="Banner" width="100%" />
 </div>
 
 <br/>
