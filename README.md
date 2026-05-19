@@ -4,7 +4,7 @@
 
 <br/>
 
-<h2 align="center">Software Engineer⚡</h2>
+<h2 align="center">Software Engineer ⚡</h2>
 
 <div align="center">
   <a href="https://mahardikakdenie.my.id" target="_blank">
@@ -35,12 +35,12 @@ I am a **Full-Stack Engineer** based in Indonesia, with a primary focus on desig
 
 <div align="center">
   <p align="center"><strong>Frontend & Mobile</strong></p>
-  <img src="https://skillicons.dev/icons?i=react,nextjs,ts,vue,nuxt,flutter,tailwind,bootstrap" />
+  <img src="https://skillicons.dev/icons?i=react,nextjs,ts,vue,nuxt,flutter,tailwind,bootstrap&perline=14" />
   
   <br/><br/>
   
   <p align="center"><strong>Backend, Database & DevOps</strong></p>
-  <img src="https://skillicons.dev/icons?i=go,nodejs,express,nestjs,laravel,php,postgres,mysql,mongodb,redis,docker,kubernetes,nginx,ubuntu" />
+  <img src="https://skillicons.dev/icons?i=go,nodejs,express,nestjs,laravel,php,postgres,mysql,mongodb,redis,docker,kubernetes,nginx,ubuntu&perline=14" />
 </div>
 
 <br/>
@@ -59,17 +59,17 @@ I am a **Full-Stack Engineer** based in Indonesia, with a primary focus on desig
   <table>
     <tr>
       <td align="center" width="50%">
-        <img src="https://github-readme-stats.vercel.app/api?username=mahardikakdenie&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="mahardikakdenie stats" width="100%" />
+        <img src="https://github-readme-stats.vercel.app/api?username=mahardikakdenie&show_icons=true&bg_color=0D1117&title_color=A855F7&text_color=94a3b8&icon_color=3B82F6&border_color=1e293b&border_radius=15" alt="mahardikakdenie stats" width="100%" />
       </td>
       <td align="center" width="50%">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahardikakdenie&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&langs_count=6" alt="top languages" width="100%" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahardikakdenie&layout=compact&bg_color=0D1117&title_color=A855F7&text_color=94a3b8&border_color=1e293b&border_radius=15&langs_count=6" alt="top languages" width="100%" />
       </td>
     </tr>
   </table>
   
   <br/>
   
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mahardikakdenie&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" width="100%" style="max-width: 800px;" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mahardikakdenie&background=0D1117&ring=A855F7&fire=3B82F6&currStreakNum=ffffff&currStreakLabel=94a3b8&sideNums=ffffff&sideLabels=94a3b8&dates=94a3b8&border=1e293b&border_radius=15" alt="GitHub Streak" width="100%" style="max-width: 800px;" />
 </div>
 
 <br/>
