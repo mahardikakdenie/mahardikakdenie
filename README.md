@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/mahardikakdenie/mahardikakdenie/main/header-banner.svg" alt="Banner" width="100%" />
+  <img src="https://i.ibb.co.com/TDC6b4HV/gemini-svg-1.jpg" alt="Banner" width="100%" />
 </div>
 
 <br/>
@@ -22,12 +22,12 @@
 
 ### 👨‍💻 About Me
 
-Saya adalah seorang **Full-Stack Engineer** yang berbasis di Indonesia, dengan fokus utama pada perancangan arsitektur sistem modern. Saya menggabungkan keandalan infrastruktur backend dengan antarmuka frontend yang *seamless* untuk aplikasi bisnis tingkat enterprise.
+I am a **Full-Stack Engineer** based in Indonesia, with a primary focus on designing modern system architectures. I combine the reliability of backend infrastructure with seamless frontend interfaces for enterprise-grade business applications.
 
-- 🔭 **Currently building:** [ensiklotari.id](https://ensiklotari.id) & merancang ekosistem SaaS *Multi-Tenant*.
+- 🔭 **Currently building:** [ensiklotari.id](https://ensiklotari.id) & designing a *Multi-Tenant* SaaS ecosystem.
 - 🌱 **Currently exploring:** Advanced Kubernetes orchestration & WebSockets caching patterns (Redis).
-- ⚙️ **Engineering Focus:** Microservices, High-Performance API Gateways, dan Real-Time Data Flow.
-- 💬 **Ask me about:** `Golang`, `React/Next.js`, `Docker`, `Flutter`, atau *Deployment Infrastructures*.
+- ⚙️ **Engineering Focus:** Microservices, High-Performance API Gateways, and Real-Time Data Flow.
+- 💬 **Ask me about:** `Golang`, `React/Next.js`, `Docker`, `Flutter`, or *Deployment Infrastructures*.
 
 ---
 
