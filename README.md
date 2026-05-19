@@ -51,7 +51,7 @@ I am a **Full-Stack Engineer** based in Indonesia, with a primary focus on desig
 
 <p align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=mahardikakdenie&theme=radical&no-frame=true&no-bg=true&margin-w=15" alt="mahardikakdenie trophies" />
+    <img src="https://github-profile-trophy.vercel.app/?username=mahardikakdenie&theme=flat&no-frame=true&no-bg=true&margin-w=15" alt="mahardikakdenie trophies" />
   </a>
 </p>
 
@@ -59,17 +59,17 @@ I am a **Full-Stack Engineer** based in Indonesia, with a primary focus on desig
   <table>
     <tr>
       <td align="center" width="50%">
-        <img src="https://github-readme-stats.vercel.app/api?username=mahardikakdenie&show_icons=true&bg_color=0D1117&title_color=A855F7&text_color=94a3b8&icon_color=3B82F6&border_color=1e293b&border_radius=15" alt="mahardikakdenie stats" width="100%" />
+        <img src="https://github-readme-stats.vercel.app/api?username=mahardikakdenie&show_icons=true&bg_color=ffffff&title_color=8b5cf6&text_color=475569&icon_color=3b82f6&border_color=e2e8f0&border_radius=15" alt="mahardikakdenie stats" width="100%" />
       </td>
       <td align="center" width="50%">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahardikakdenie&layout=compact&bg_color=0D1117&title_color=A855F7&text_color=94a3b8&border_color=1e293b&border_radius=15&langs_count=6" alt="top languages" width="100%" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahardikakdenie&layout=compact&bg_color=ffffff&title_color=8b5cf6&text_color=475569&border_color=e2e8f0&border_radius=15&langs_count=6" alt="top languages" width="100%" />
       </td>
     </tr>
   </table>
   
   <br/>
   
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mahardikakdenie&background=0D1117&ring=A855F7&fire=3B82F6&currStreakNum=ffffff&currStreakLabel=94a3b8&sideNums=ffffff&sideLabels=94a3b8&dates=94a3b8&border=1e293b&border_radius=15" alt="GitHub Streak" width="100%" style="max-width: 800px;" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mahardikakdenie&background=ffffff&ring=8b5cf6&fire=3b82f6&currStreakNum=1e293b&currStreakLabel=475569&sideNums=1e293b&sideLabels=475569&dates=475569&border=e2e8f0&border_radius=15" alt="GitHub Streak" width="100%" style="max-width: 800px;" />
 </div>
 
 <br/>
