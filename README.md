@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./header-banner.svg" alt="Mahardika K. Denie - Software Engineer" width="100%" />
+  <img src="https://raw.githubusercontent.com/mahardikakdenie/mahardikakdenie/main/header-banner.svg" alt="Banner" width="100%" />
 </div>
 
 <br/>
