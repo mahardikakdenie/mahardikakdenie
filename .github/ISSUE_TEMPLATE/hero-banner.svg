@@ -3,32 +3,71 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;family=Outfit:wght@400;700;900&amp;display=swap');
       
-      .text-title { font-family: 'Outfit', sans-serif; font-size: 80px; font-weight: 900; fill: #ffffff; letter-spacing: -0.02em; line-height: 1; }
-      .text-subtitle { font-family: 'Outfit', sans-serif; font-size: 28px; font-weight: 400; fill: #94a3b8; }
+      /* Typography */
       .text-badge { font-family: 'Outfit', sans-serif; font-size: 16px; font-weight: 700; fill: #ffffff; letter-spacing: 0.1em; }
       
       /* Code Syntax Highlighting Colors (One Dark Pro inspired) */
       .code-font { font-family: 'JetBrains Mono', monospace; font-size: 17px; }
-      .kw { fill: #c678dd; } /* Keyword - Purple */
-      .var { fill: #e5c07b; } /* Variable - Yellow */
-      .prop { fill: #61afef; } /* Property - Blue */
-      .str { fill: #98c379; } /* String - Green */
-      .num { fill: #d19a66; } /* Number/Boolean - Orange */
-      .punc { fill: #abb2bf; } /* Punctuation - Gray */
-      .comment { fill: #5c6370; font-style: italic; } /* Comment - Dark Gray */
+      .kw { fill: #c678dd; } 
+      .var { fill: #e5c07b; } 
+      .prop { fill: #61afef; } 
+      .str { fill: #98c379; } 
+      .num { fill: #d19a66; } 
+      .punc { fill: #abb2bf; } 
+      .comment { fill: #5c6370; font-style: italic; } 
+
+      /* ANIMATIONS */
+      /* 1. Sequential Fade In for Code Lines */
+      .line { opacity: 0; animation: fadeSlideUp 0.4s ease-out forwards; }
+      @keyframes fadeSlideUp {
+        0% { opacity: 0; transform: translateY(10px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      .d-1 { animation-delay: 0.2s; }
+      .d-2 { animation-delay: 0.4s; }
+      .d-3 { animation-delay: 0.6s; }
+      .d-4 { animation-delay: 0.8s; }
+      .d-5 { animation-delay: 1.0s; }
+      .d-6 { animation-delay: 1.2s; }
+      .d-7 { animation-delay: 1.4s; }
+      .d-8 { animation-delay: 1.6s; }
+      .d-9 { animation-delay: 1.8s; }
+      .d-10 { animation-delay: 2.0s; }
+      .d-11 { animation-delay: 2.2s; }
+      .d-12 { animation-delay: 2.4s; }
+      .d-13 { animation-delay: 2.6s; }
+      
+      /* 2. Blinking Cursor */
+      .cursor { opacity: 0; animation: blink 1s step-end infinite; animation-delay: 3s; }
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+      /* 3. Coffee Steam */
+      .steam { stroke-dasharray: 10; stroke-dashoffset: 10; animation: steamRise 2s infinite linear; opacity: 0; }
+      .s1 { animation-delay: 0s; }
+      .s2 { animation-delay: 1s; }
+      @keyframes steamRise {
+        0% { stroke-dashoffset: 10; opacity: 0; transform: translateY(0) scale(0.8); }
+        50% { opacity: 0.6; }
+        100% { stroke-dashoffset: 0; opacity: 0; transform: translateY(-15px) scale(1.2); }
+      }
     </style>
 
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d1117" /> <stop offset="100%" stop-color="#161b22" />
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#161b22" />
     </linearGradient>
 
-    <linearGradient id="nameGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#60a5fa" />
-      <stop offset="100%" stop-color="#a855f7" />
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
 
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glow-strong" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
     
@@ -36,7 +75,7 @@
       <feGaussianBlur stdDeviation="100" />
     </filter>
 
-    <filter id="shadow" x="-5%" y="-5%" width="120%" height="120%">
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
       <feDropShadow dx="0" dy="25" stdDeviation="25" flood-color="#000000" flood-opacity="0.6"/>
     </filter>
   </defs>
@@ -48,63 +87,124 @@
   </pattern>
   <rect width="1200" height="630" fill="url(#grid)" />
 
-  <circle cx="900" cy="150" r="300" fill="#60a5fa" opacity="0.15" filter="url(#ambientBlur)" />
-  <circle cx="300" cy="500" r="250" fill="#a855f7" opacity="0.15" filter="url(#ambientBlur)" />
+  <circle cx="900" cy="150" r="300" fill="#60a5fa" opacity="0.15" filter="url(#ambientBlur)">
+    <animate attributeName="r" values="300; 340; 300" dur="8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="300" cy="500" r="250" fill="#a855f7" opacity="0.15" filter="url(#ambientBlur)">
+    <animate attributeName="r" values="250; 280; 250" dur="6s" repeatCount="indefinite" />
+  </circle>
 
-  <g transform="translate(80, 200)">
+  <g transform="translate(60, 150)">
     
-    <g transform="translate(0, -50)">
+    <g transform="translate(20, -50)">
       <rect x="0" y="0" width="180" height="36" rx="18" fill="#1f2937" stroke="#374151" stroke-width="1" />
-      <circle cx="20" cy="18" r="5" fill="#10b981" filter="url(#glow)"/>
+      <circle cx="20" cy="18" r="5" fill="#10b981" filter="url(#glow)">
+        <animate attributeName="opacity" values="1; 0.5; 1" dur="2s" repeatCount="indefinite" />
+      </circle>
       <text x="35" y="23" class="text-badge" fill="#9ca3af">BANDUNG, ID</text>
     </g>
 
-    <text x="0" y="40" class="text-title">Hi, I'm</text>
-    <text x="0" y="125" class="text-title" fill="url(#nameGradient)">Mahardika<tspan fill="#ffffff">.</tspan></text>
-    
-    <text x="0" y="190" class="text-subtitle">Full-Stack Developer</text>
-    <text x="0" y="230" class="text-subtitle" style="font-size: 20px;">Building scalable systems &amp; web apps.</text>
-  </g>
+    <rect x="0" y="320" width="460" height="12" rx="6" fill="#1e293b" />
+    <rect x="0" y="332" width="460" height="4" fill="#0f172a" />
+    <path d="M 50 336 L 40 450 M 410 336 L 420 450" stroke="#1e293b" stroke-width="12" stroke-linecap="round" fill="none"/>
 
-  <g transform="translate(560, 80)" filter="url(#shadow)">
-    <rect width="580" height="470" rx="16" fill="#1e222a" stroke="#3e4451" stroke-width="2" />
+    <rect x="250" y="290" width="40" height="30" fill="#334155" />
+    <rect x="200" y="315" width="140" height="6" rx="3" fill="#475569" />
     
-    <g transform="translate(20, 20)">
-      <circle cx="0" cy="0" r="6" fill="#ff5f56" />
-      <circle cx="20" cy="0" r="6" fill="#ffbd2e" />
-      <circle cx="40" cy="0" r="6" fill="#27c93f" />
-      <text x="240" y="4" class="code-font punc" style="font-size: 14px;">developer.ts</text>
+    <g filter="url(#glow-strong)">
+      <rect x="150" y="150" width="240" height="140" rx="12" fill="#0f172a" stroke="#3b82f6" stroke-width="2" />
+    </g>
+    <g transform="translate(155, 155)">
+      <rect x="0" y="0" width="230" height="130" rx="8" fill="url(#screenGrad)" />
+      
+      <rect x="5" y="5" width="40" height="120" rx="4" fill="#1e293b" /> <rect x="50" y="5" width="175" height="15" rx="4" fill="#1e293b" /> <g transform="translate(55, 30)">
+        <animateTransform attributeName="transform" type="translate" values="55,30; 55,20; 55,30" dur="4s" repeatCount="indefinite" />
+        <rect x="0" y="0" width="100" height="5" rx="2.5" fill="#a855f7" />
+        <rect x="0" y="12" width="140" height="5" rx="2.5" fill="#3b82f6" />
+        <rect x="15" y="24" width="80" height="5" rx="2.5" fill="#10b981" />
+        <rect x="15" y="36" width="120" height="5" rx="2.5" fill="#64748b" />
+        <rect x="15" y="48" width="90" height="5" rx="2.5" fill="#64748b" />
+        <rect x="0" y="60" width="110" height="5" rx="2.5" fill="#f472b6" />
+      </g>
     </g>
 
-    <path d="M 0 45 L 580 45" stroke="#3e4451" stroke-width="2" />
+    <path d="M 60 180 L 60 380" stroke="#1e293b" stroke-width="25" stroke-linecap="round" />
+    
+    <path d="M 100 310 C 100 230, 180 230, 180 310 Z" fill="#6366f1" />
+    <path d="M 115 220 C 115 170, 175 170, 175 220 Z" fill="#6366f1" />
+    <circle cx="160" cy="200" r="22" fill="#0f172a" />
+    
+    <rect x="155" y="190" width="30" height="12" rx="6" fill="#3b82f6" filter="url(#glow)" />
+    
+    <rect x="160" y="316" width="70" height="6" rx="2" fill="#9ca3af" transform="rotate(-10 160 316)" />
 
-    <g transform="translate(20, 85)" class="code-font">
-      <text x="0" y="0"><tspan class="kw">const</tspan> <tspan class="var">mahardika</tspan> <tspan class="punc">=</tspan> <tspan class="punc">{</tspan></text>
-      
-      <text x="20" y="30"><tspan class="prop">role</tspan><tspan class="punc">:</tspan> <tspan class="str">"Software Engineer"</tspan><tspan class="punc">,</tspan></text>
-      
-      <text x="20" y="60"><tspan class="prop">location</tspan><tspan class="punc">:</tspan> <tspan class="str">"Bandung, Indonesia"</tspan><tspan class="punc">,</tspan></text>
-      
-      <text x="20" y="90"><tspan class="prop">currentlyBuilding</tspan><tspan class="punc">:</tspan> <tspan class="str">"ensiklotari.id"</tspan><tspan class="punc">,</tspan></text>
-      
-      <text x="20" y="130"><tspan class="comment">// --- Tech Stack Arsenal ---</tspan></text>
+    <g>
+       <animateTransform attributeName="transform" type="rotate" values="0 145 235; 15 145 235; -5 145 235; 8 145 235; 0 145 235" dur="0.3s" repeatCount="indefinite" />
+       <path d="M 145 235 L 150 285 L 215 295" stroke="#4338ca" stroke-width="16" stroke-linecap="round" fill="none" />
+       <circle cx="220" cy="295" r="8" fill="#f59e0b" />
+    </g>
+    <g>
+       <animateTransform attributeName="transform" type="rotate" values="0 140 235; -10 140 235; 12 140 235; -6 140 235; 0 140 235" dur="0.4s" repeatCount="indefinite" />
+       <path d="M 140 235 L 130 280 L 195 295" stroke="#4f46e5" stroke-width="18" stroke-linecap="round" fill="none" />
+       <circle cx="200" cy="295" r="9" fill="#fbbf24" />
+    </g>
 
-      <text x="20" y="160"><tspan class="prop">techStack</tspan><tspan class="punc">:</tspan> <tspan class="punc">{</tspan></text>
-      
-      <text x="40" y="190"><tspan class="prop">frontend</tspan><tspan class="punc">:</tspan> <tspan class="punc">[</tspan><tspan class="str">"React"</tspan><tspan class="punc">, </tspan><tspan class="str">"Vue"</tspan><tspan class="punc">, </tspan><tspan class="str">"Next.js"</tspan><tspan class="punc">, </tspan><tspan class="str">"Flutter"</tspan><tspan class="punc">],</tspan></text>
-      
-      <text x="40" y="220"><tspan class="prop">backend</tspan><tspan class="punc">:</tspan> <tspan class="punc">[</tspan><tspan class="str">"Node.js"</tspan><tspan class="punc">, </tspan><tspan class="str">"Golang"</tspan><tspan class="punc">, </tspan><tspan class="str">"Laravel"</tspan><tspan class="punc">, </tspan><tspan class="str">"NestJS"</tspan><tspan class="punc">],</tspan></text>
-      
-      <text x="40" y="250"><tspan class="prop">database</tspan><tspan class="punc">:</tspan> <tspan class="punc">[</tspan><tspan class="str">"PostgreSQL"</tspan><tspan class="punc">, </tspan><tspan class="str">"MySQL"</tspan><tspan class="punc">, </tspan><tspan class="str">"MongoDB"</tspan><tspan class="punc">]</tspan></text>
+    <g transform="translate(110, 290)">
+       <path d="M 0 0 L 20 0 L 16 30 L 4 30 Z" fill="#f8fafc" />
+       <path d="M 20 5 C 26 5, 26 15, 18 15" stroke="#f8fafc" stroke-width="3" fill="none" />
+       <path d="M 6 -5 Q 12 -12 6 -20 T 12 -30" stroke="#94a3b8" stroke-width="2" fill="none" class="steam s1" />
+       <path d="M 14 -2 Q 20 -10 14 -16 T 20 -25" stroke="#94a3b8" stroke-width="2" fill="none" class="steam s2" />
+    </g>
+  </g>
 
-      <text x="20" y="280"><tspan class="punc">},</tspan></text>
+
+  <g transform="translate(560, 80)" filter="url(#shadow)">
+    
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-15; 0,0" dur="6s" repeatCount="indefinite" />
       
-      <text x="20" y="320"><tspan class="prop">hireable</tspan><tspan class="punc">:</tspan> <tspan class="num">true</tspan><tspan class="punc">,</tspan></text>
+      <rect width="580" height="470" rx="16" fill="#1e222a" stroke="#3e4451" stroke-width="2" />
+      
+      <g transform="translate(20, 20)">
+        <circle cx="0" cy="0" r="6" fill="#ff5f56" />
+        <circle cx="20" cy="0" r="6" fill="#ffbd2e" />
+        <circle cx="40" cy="0" r="6" fill="#27c93f" />
+        <text x="240" y="4" class="code-font punc" style="font-size: 14px;">developer.ts</text>
+      </g>
 
-      <text x="20" y="350"><tspan class="prop">passion</tspan><tspan class="punc">:</tspan> <tspan class="str">"Crafting elegant solutions for complex problems"</tspan></text>
+      <path d="M 0 45 L 580 45" stroke="#3e4451" stroke-width="2" />
 
-      <text x="0" y="380"><tspan class="punc">};</tspan></text>
+      <g transform="translate(20, 85)" class="code-font">
+        <text x="0" y="0" class="line d-1"><tspan class="kw">const</tspan> <tspan class="var">mahardika</tspan> <tspan class="punc">=</tspan> <tspan class="punc">{</tspan></text>
+        
+        <text x="20" y="30" class="line d-2"><tspan class="prop">role</tspan><tspan class="punc">:</tspan> <tspan class="str">"Software Engineer"</tspan><tspan class="punc">,</tspan></text>
+        
+        <text x="20" y="60" class="line d-3"><tspan class="prop">location</tspan><tspan class="punc">:</tspan> <tspan class="str">"Bandung, Indonesia"</tspan><tspan class="punc">,</tspan></text>
+        
+        <text x="20" y="90" class="line d-4"><tspan class="prop">currentlyBuilding</tspan><tspan class="punc">:</tspan> <tspan class="str">"ensiklotari.id"</tspan><tspan class="punc">,</tspan></text>
+        
+        <text x="20" y="130" class="line d-5"><tspan class="comment">// --- Tech Stack Arsenal ---</tspan></text>
 
+        <text x="20" y="160" class="line d-6"><tspan class="prop">techStack</tspan><tspan class="punc">:</tspan> <tspan class="punc">{</tspan></text>
+        
+        <text x="40" y="190" class="line d-7"><tspan class="prop">frontend</tspan><tspan class="punc">:</tspan> <tspan class="punc">[</tspan><tspan class="str">"React"</tspan><tspan class="punc">, </tspan><tspan class="str">"Vue"</tspan><tspan class="punc">, </tspan><tspan class="str">"Next.js"</tspan><tspan class="punc">, </tspan><tspan class="str">"Flutter"</tspan><tspan class="punc">],</tspan></text>
+        
+        <text x="40" y="220" class="line d-8"><tspan class="prop">backend</tspan><tspan class="punc">:</tspan> <tspan class="punc">[</tspan><tspan class="str">"Node.js"</tspan><tspan class="punc">, </tspan><tspan class="str">"Golang"</tspan><tspan class="punc">, </tspan><tspan class="str">"Laravel"</tspan><tspan class="punc">, </tspan><tspan class="str">"NestJS"</tspan><tspan class="punc">],</tspan></text>
+        
+        <text x="40" y="250" class="line d-9"><tspan class="prop">database</tspan><tspan class="punc">:</tspan> <tspan class="punc">[</tspan><tspan class="str">"PostgreSQL"</tspan><tspan class="punc">, </tspan><tspan class="str">"MySQL"</tspan><tspan class="punc">, </tspan><tspan class="str">"MongoDB"</tspan><tspan class="punc">]</tspan></text>
+
+        <text x="20" y="280" class="line d-10"><tspan class="punc">},</tspan></text>
+        
+        <text x="20" y="320" class="line d-11"><tspan class="prop">hireable</tspan><tspan class="punc">:</tspan> <tspan class="num">true</tspan><tspan class="punc">,</tspan></text>
+
+        <text x="20" y="350" class="line d-12"><tspan class="prop">passion</tspan><tspan class="punc">:</tspan> <tspan class="str">"Crafting elegant solutions"</tspan></text>
+
+        <g class="line d-13">
+          <text x="0" y="380"><tspan class="punc">};</tspan></text>
+          <rect x="25" y="365" width="10" height="20" fill="#61afef" class="cursor" />
+        </g>
+      </g>
+      
     </g>
   </g>
 </svg>
